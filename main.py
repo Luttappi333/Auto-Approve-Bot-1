@@ -17,12 +17,12 @@ ABOUT = """
 ☃️**About This Bot**☃️
 
 💠Commands : [Click Here](https://telegra.ph/Auto-Join-Reqvest-Accpet-Bot-Commads-12-24)
-🍁Bot created by @EmoBotDevolopers
-📦Source Code : [Click Here](https://github.com/RishBropromax/Auto-Approve-Bot)
+🍁Bot created by @KOMBOTZZ
+⚡️ᴜᴩᴅᴀᴛᴇꜱ⚡️: [Click Here](https://t.me/KOMOFFICIAL)
 ☘️Framework : [Pyrogram](docs.pyrogram.org)
 🔰Language : [Python](www.python.org)
-🧑‍💻Developer : @ImRishmika
-🆘Support : [Emo Bot Support](https://t.me/EmoBotSupport)
+🧑‍💻Developer : @LUTTAPPIXTG
+🆘Support : [Emo Bot Support](https://t.me/KOMBOTZZ)
 
 """
 
@@ -52,7 +52,7 @@ async def approve(_, m : Message):
         add_group(m.chat.id)
         await app.approve_chat_join_request(op.id, kk.id)
         img = random.choice(gif)
-        await app.send_video(kk.id,img, "**Hello {}!\nWelcome To {}\n I m Auto Approve Bot.**\n ⚡️Powerd By @EmoBotDevolopers ".format(m.from_user.mention, m.chat.title))
+        await app.send_video(kk.id,img, "**Hello {}!\nWelcome To {}\n I m Auto Approve Bot.**\n ⚡️Powerd By @KOMBOTZz ".format(m.from_user.mention, m.chat.title))
         add_user(kk.id)
     except errors.PeerIdInvalid as e:
         print("user isn't start bot(means group)")
@@ -63,7 +63,7 @@ async def approve(_, m : Message):
 
 @app.on_message(filters.command("about"))
 async def help(bot, message):
-  await message.reply_photo("https://telegra.ph/file/c4ea3761bb73bab726334.jpg",caption=ABOUT,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="</> ємσ вσт ∂єνσℓσρєʀѕ", url="t.me/EmoBotDevolopers")]]))
+  await message.reply_photo("https://telegra.ph/file/90931f8d0390c17c7a767.jpg",caption=ABOUT,reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="</> ємσ вσт ∂єνσℓσρєʀѕ", url="t.me/EmoBotDevolopers")]]))
 
 #━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Start ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -75,26 +75,26 @@ async def op(_, m :Message):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🗯 Channel", url="https://t.me/EmoBotDevolopers"),
-                        InlineKeyboardButton("💬 Support", url="https://t.me/EmoBotSupport")
+                        InlineKeyboardButton("🗯 Channel", url="https://t.me/KOMOFFICIAL"),
+                        InlineKeyboardButton("💬 Support", url="https://t.me/KOMBOTZZ")
                     ],
                     [
-                        InlineKeyboardButton("🧩 Repo 🧩", url="https://github.com/RishBropromax/Auto-Approve-Bot"),
-                        InlineKeyboardButton("💻 Devolopers 💻", url="https://t.me/ImRishmika")
+                        InlineKeyboardButton("🧩 OWNERINFO 🧩", url="https://t.me/LUTTAPPIMOVIE"),
+                        InlineKeyboardButton("💻 Devolopers 💻", url="https://t.me/LUTTAPPIXTG")
                     ],
                     [
-                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/emApprove_Bot?startgroup")
+                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/KOM_JOINACCEPT_BOT?startchannel")
                     ]
                 ]
             )
             add_user(m.from_user.id)
-            await m.reply_photo("https://telegra.ph/file/d5becc3a7c18f619bcd22.png", caption="**🦊 Hello {}!\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n 🔰 Powerd By [Emo Bot Devolopers](t.me/EmoBotSupport)**".format(m.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard)
+            await m.reply_photo("https://telegra.ph/file/90931f8d0390c17c7a767.jpg", caption="**🦊 Hello {}!\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n 🔰 Powerd By [KOM BOTS](t.me/KOMBOTZZ)**".format(m.from_user.mention, "https://t.me/KOMBOTZZ"), reply_markup=keyboard)
     
         elif m.chat.type == enums.ChatType.GROUP or enums.ChatType.SUPERGROUP:
             keyboar = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("💁‍♂️ Start me private 💁‍♂️", url="https://t.me/emApprove_Bot?start=start")
+                        InlineKeyboardButton("💁‍♂️ Start me private 💁‍♂️", url="https://t.me/KOM_JOINACCEPT_BOT?start=start")
                     ]
                 ]
             )
@@ -122,20 +122,20 @@ async def chk(_, cb : CallbackQuery):
             keyboard = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🗯 Channel", url="https://t.me/EmoBotDevolopers"),
-                        InlineKeyboardButton("💬 Support", url="https://t.me/EmoBotSupport")
+                        InlineKeyboardButton("🗯 Channel", url="https://t.me/KOM_LINKS"),
+                        InlineKeyboardButton("💬 Support", url="https://t.me/KOMBOTZZ")
                     ],
                     [
-                        InlineKeyboardButton("🧩 Repo 🧩", url="https://github.com/RishBropromax/Auto-Approve-Bot"),
-                        InlineKeyboardButton("💻 Devolopers 💻", url="https://t.me/ImRishmika")
+                        InlineKeyboardButton("🧩 Owner info 🧩", url="https://t.me/luttappimovie"),
+                        InlineKeyboardButton("💻 Devolopers 💻", url="https://t.me/luttappixtg")
                     ],
                     [
-                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/emApprove_Bot?startgroup")
+                        InlineKeyboardButton("➕ Add me to your Chat ➕", url="https://t.me/KOM_JOINACCEPT_BOT?startchannel")
                     ]
                 ]
             )
             add_user(cb.from_user.id)
-            await cb.message.edit("**🦊 Hello {}!\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n 🔰 Powerd By [Emo Bot Devolopers](t.me/EmoBotDevolopers)**".format(cb.from_user.mention, "https://t.me/EmoBotDevolopers"), reply_markup=keyboard, disable_web_page_preview=True)
+            await cb.message.edit("**🦊 Hello {}!\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n 🔰 Powerd By [KOM BOTZ](t.me/KOMBOTZZ)**".format(cb.from_user.mention, "https://t.me/KOMBOTZZ"), reply_markup=keyboard, disable_web_page_preview=True)
         print(cb.from_user.first_name +" Is started Your Bot!")
     except UserNotParticipant:
         await cb.answer("🙅‍♂️ You are not joined to channel join and try again. 🙅‍♂️")
